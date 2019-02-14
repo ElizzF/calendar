@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日历</title>
+	<link rel="stylesheet" href="css/date.css">
+	<script src="jquery/jquery.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+			<div class="header">
+                    <select class="year" id='year'></select>
+                    <button class="button_left" ><</button>
+                    <select class="month" id='month'></select>
+                    <button class="button_right" >></button>
+                    <button class="return_today">返回今天</button>
+			</div>
+			<ul class="week_title">
+				<li>日</li>
+				<li>一</li>
+				<li>二</li>
+				<li>三</li>
+				<li>四</li>
+				<li>五</li>
+				<li>六</li>				
+			</ul>
+			<div class="days">
+				<ul class="dateList"></ul>
+			</div>
+		</div>
+		<div class="right">
+			<ul class="list" id="list">
+			</ul>
+			<div class="put">
+                <input type="text" id="text_input" placeholder="添加Todo"></input>
+                <button class="clear" id="clear">清空</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/date.js"></script>
+</body>
+</html>
+
